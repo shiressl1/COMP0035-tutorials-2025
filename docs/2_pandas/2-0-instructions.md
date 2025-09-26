@@ -1,5 +1,7 @@
 # Coding activities 2: Working with Python pandas
 
+_*Theme: Using Python to work with data*_
+
 ## Introduction
 
 This set of activities use Python pandas to describe, explore and prepare data from one or more raw data files (data
@@ -66,7 +68,7 @@ The following screenshot shows this in PyCharm on macOS:
 ![Check for active venv](../img/venv-check.png)
 
 If you are not in a venv, refer to activating a virtual environment
-in [Week 1 activity 2](../1_structure/2-environments.md).
+in [Week 1 activity 2](../1_structure/1-02-environments.md).
 
 ### 3. Check you have the required libraries installed in the virtual environment
 
@@ -83,8 +85,6 @@ If missing, install these using `pip` e.g.  `pip install pandas openpyxl`
 ## Complete the activities
 This week's activities are more than you can complete in a week. There are less in week 4 so you could delay some to
 that week.
-
-Activity instructions are in the docs/2_pandas folder.
 
 1. [Create a package and module](2-01-python-structure)
 2. [Open .csv and .xlsx files and create a DataFrame](2-02-pandas-df)

@@ -26,24 +26,30 @@ This will be updated each week with the activities for that week.
 
 ### Week 1 Source code control, environment, structure
 
+_*Theme: Working with code for applications*_
+
 Required:
 
-1. [Python project structure](docs/1_structure/1-structure.md)
-2. [Python virtual environment](docs/1_structure/2-environments.md)
-3. [Source code control (GitHub)](docs/1_structure/3-source-code-control.md)
-4. [Set up the course activities project and repository](docs/1_structure/4-activities-repo.md)
-5. [Set up the coursework project and repository](docs/1_structure/5-coursework-repo.md)
+1. [Python project structure](docs/1_structure/1-01-structure.md)
+2. [Python virtual environment](docs/1_structure/1-02-environments.md)
+3. [Source code control (GitHub)](docs/1_structure/1-03-source-code-control.md)
+4. [Set up the course activities project and repository](docs/1_structure/1-04-activities-repo.md)
+5. [Set up the coursework project and repository](docs/1_structure/1-05-coursework-repo.md)
 
 Optional:
 
-6. [Computer setup for COMP0035](docs/1_structure/6-opt-computer_setup.md)
-7. [Integrate your IDE with GitHub](docs/1_structure/7-opt-integrate-IDE-GitHub.md)
-8. [Using CoPilot in VS Code and PyCharm](docs/1_structure/8-opt-copilot-ide.md)
+6. [Computer setup for COMP0035](docs/1_structure/1-06-opt-computer_setup.md)
+7. [Integrate your IDE with GitHub](docs/1_structure/1-07-opt-integrate-IDE-GitHub.md)
+8. [Using CoPilot in VS Code and PyCharm](docs/1_structure/1-08-opt-copilot-ide.md)
 
 ### Week 2 Pandas to describe, explore and prepare a dataset
 
-This week's activities are more than you can complete in a week. There are less in week 4 so you could delay some to
-that week.
+_*Theme: Using Python to work with data*_
+
+This week's activities are more than you can complete in a week. There are less in weeks 4 and 5 so you could delay
+some.
+
+[Week 2 instructions](docs/2_pandas/2-0-instructions.md) are in the docs/2_pandas folder:
 
 1. [Create a package and module](docs/2_pandas/2-01-python-structure)
 2. [Open .csv and .xlsx files and create a DataFrame](docs/2_pandas/2-02-pandas-df)
@@ -66,7 +72,12 @@ that week.
 
 ### Week 3 Database design; sqlite3
 
-Activity instructions are in the docs/3_database folder, including:
+_*Themes: Designing applications*_ & _*Using Python to work with data*_
+
+This week's activities are more than you can complete in a week. There are less in weeks 4 and 5 so you could delay
+some.
+
+[Activity instructions](docs/3_database/3-0-instructions.md) are in the docs/3_database folder:
 
 1. [Introduction to database design (lecture recap)](docs/3_database/3-01-database-design.md)
 2. [Introduction to ERD (lecture recap) and ERD drawing tools](docs/3_database/3-02-erd-intro.md)
@@ -78,41 +89,114 @@ Activity instructions are in the docs/3_database folder, including:
 8. [Logical design - referential integrity](docs/3_database/3-08-logical-design-constraints-fk.md)
 9. [Logical design activity](docs/3_database/3-09-logical-design-activity.md)
 10. [Physical design - SQLite schema](docs/3_database/3-10-physical-design-structure.md)
-11. [Phyical design - Python to create SQLite database structure](docs/3_database/3-11-physical-design-create-db.md)
-12. [Database design - next steps](docs/3_database/3-12-next-steps.md)
-    
-The remaining activities are optional at this stage. They are not required in coursework 1.
+11. [Physical design - Python to create SQLite database structure](docs/3_database/3-11-physical-design-create-db.md)
+12. [Database design - next steps](docs/3_database/3-16-next-steps.md)
+13. [SQL INSERT and SELECT intro](docs/3_database/3-12-sql-add-data.md)
+14. [Add data to tables with no FK](docs/3_database/3-13-insert-no-fk.md)
+15. [Select data](docs/3_database/3-14-select-query.md)
+16. [Add data to tables with an FK](docs/3_database/3-15-insert-with-fk.md)
+17. [Normalisation and application code](docs/3_database/3-17-normalisation-tradeoff.md)- A brief intro to the trade-off
+    between database normalisation and query design
 
-13. [SQL INSERT and SELECT intro](docs/3_database/3-13-sql-add-data.md)
-14. [Add data to tables with no FK](docs/3_database/3-14-insert-no-fk.md)
-15. [Select data](docs/3_database/3-15-select-query.md)
-16. [Add data to tables with an FK](docs/3_database/3-16-insert-with-fk.md) 
-17. [Normalisation and application code](docs/3_database/3-17-normalisation-tradeoff.md)- A brief intro to the trade-off between database normalisation and query design
+### Week 4 Code quality: linting, docstrings, exception handling, project structure and imports
 
-### Week 4 Code quality: linting, docstrings, PEP8/257, use of functions.
+_*Theme: Working with code for applications*_
+
+[Week 4 instructions](docs/4_code_quality/4-0-instructions.md) are in the docs/4_code_quality folder:
+
+1. [Docstring](docs/4_code_quality/4-01-docstrings.md)
+2. [Linting and auto-formatting](docs/4_code_quality/4-02-linting.md)
+3. [GitHub Actions lint report](docs/4_code_quality/4-03-github-actions.md)
+4. [(Optional) Static analysis: beyond linting](docs/4_code_quality/4-04-static-analysis.md)
+5. [Project structure](docs/4_code_quality/4-05-project-structure.md)
+6. [Imports](docs/4_code_quality/4-06-imports.md)
+7. [Error handling](docs/4_code_quality/4-07-error-handling.md)
+
+<hr>
+
+**Activities after this point relate to coursework 2**
+
+<hr>
 
 ### Week 5 Database to Python class: ORM
 
+_*Theme: Using Python to work with data*_
+
+[Week 5 instructions](docs/5_classes_orm/5-0-instructions.md)are in the docs/5_classes_orm folder:
+
+1. [Python classes](docs/5_classes_orm/5-01-class.md)
+2. [Python data classes](docs/5_classes_orm/5-02-data-class.md)
+3. [Class relationships - inheritance, composition](docs/5_classes_orm/5-03-inheritance-composition.md)
+4. [Pydantic](docs/5_classes_orm/5-04-pydantic.md)
+5. [ORM and SQLModel](docs/5_classes_orm/5-05-orm-sqlmodel.md)
+6. [Using SQLModel to create SQLite database](docs/5_classes_orm/5-06-sqlmodel-create-db.md)
+7. [Using SQLModel to add data](docs/5_classes_orm/5-07-sqlmodel-add-data.md)
+8. [Summary](docs/5_classes_orm/5-08-summary.md)
+
 ### Week 6 Requirements; interface design
+
+_*Theme: Designing applications*_
+
+[Instructions](docs/6_requirements/6-0-instructions.md) in the docs/6_requirements folder:
+
+1. [Introduction](6-01-introduction.md)
+2. [Identify requirements](6-02-identify-requirements.md)
+3. [Document requirements](6-03-document-requirements.md)
+4. [Prioritise requirements](6-04-prioritise-requirements.md)
+5. [Draw wireframes](6-05-wireframes.md)
 
 ### Week 7 Application design
 
-### Week 8 Classes; error handling
+_*Theme: Designing applications*_
+
+[Instructions](docs/7_app_design/7-0-instructions.md) are in the docs/7_app_design folder:
+
+1. [Introduction to application design](docs/7_app_design/7-01-introduction.md)
+2. [Examples of application designs](docs/7_app_design/7-02-diagram-examples.md)
+3. [Identify classes](docs/7_app_design/7-03-identify-classes.md)
+4. [Draw the application design diagram](docs/7_app_design/7-04-draw-design.md)
+5. [Review the design](docs/7_app_design/7-05-review-design.md)
+6. [Draw the application design for the paralympics prediction web app](docs/7_app_design/7-06-design-medals.md)
+7. [Results of using genAI for the application design](docs/7_app_design/7-07-genAI.md)
+
+### Week 8 Classes and database 2
+
+_*Theme: Using Python to work with data*_
+
+[Instructions](docs/8_classes_database_2/8-0-instructions.md) are in the docs/8_classes_database_2 folder:
+
+1. [Adding methods to classes](docs/8_classes_database_2/8-01-methods.md)
+2. [Add data using SQLModel](docs/8_classes_database_2/8-02-insert.md)
+3. [Add data to tables with relationships](docs/8_classes_database_2/8-03-insert-multiple.md)
+4. [Selecting data from a database with SQLModel](docs/8_classes_database_2/8-04-select.md)
+5. [Update data in a database with SQLModel](docs/8_classes_database_2/8-05-update.md)
+6. [Delete data from a database with SQLModel](docs/8_classes_database_2/8-06-delete.md)
+7. [Reminder: code quality still matters!](docs/8_classes_database_2/8-07-quality.md)
 
 ### Week 9 Unit testing, CI and coverage
+
+_*Theme: Working with code for applications*_
+
+[Instructions](docs/9_testing/9-0-instructions.md) and activities can be found in the docs/9_testing folder:
+
+1. [Introduction to testing and conventions](docs/9_testing/9-01-introduction.md)
+2. [Testing with pytest](docs/9_testing/9-02-pytest-tests.md)
+3. [Pytest fixtures](docs/9_testing/9-03-fixtures.md)
+4. [Reporting test coverage](docs/9_testing/9-04-coverage.md)
+5. [Running tests with GitHub Actions](docs/9_testing/9-05-ci-github.md)
+6. [Further information](docs/9_testing/9-06-further.md)
 
 ### Week 10 No new activities
 
 Tutorial reserved for final coursework support
 
-## Data
+## Data set
 
-Most activities use paralympics data that was compiled from
-the [IPC website](https://www.paralympic.org/paralympic-games).
+Most activities use paralympics data that was originally compiled from
+the [IPC website](https://www.paralympic.org/paralympic-games) in 2021.
 
-The data is duplicated in some instances in `src/data` and in `src/starter/resources`. This is for teaching purposes for
-an activity that explains different methods to import the data in the project depending on its location within or
-outside the package's directory structure.
+The data may be duplicated in some instances in `src/data` and other sub-folders in `src`. This is for teaching purposes
+for an activity that requires a different copy or location.
 
 ### External examples using similar paralympics data
 
