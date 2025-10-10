@@ -1,8 +1,8 @@
-# Activity 2: Insert data into a single table
+# 3. Insert data into a single table
 
 ## Recap from week 5
 
-[Activity 5.7](../5_classes_orm/5-07-sqlmodel-add-data.md) introduced how to add data to a single table.
+[Activity 5.7](../5_classes_orm/5-06-sqlmodel-add-data.md) introduced how to add data to a single table.
 
 Inserting data into the paralympics database is complex and beyond what you would need in your coursework so this
 activity returns to the student database example.
@@ -61,7 +61,7 @@ The class in models.py for the teacher has this structure:
 
 ```python
 class Teacher(SQLModel, table=True):
-    teacher_id: Optional[int] = Field(default=None, primary_key=True)
+    id: int | None = Field(default=None, primary_key=True)
     teacher_name: str
     teacher_email: str
 ```
@@ -113,4 +113,4 @@ Edit the starter files to add a teacher to the database.
 The SQLModel documentation examples add this method to `app.py`. I added it to `database.py`. You choose where you think
 is most appropriate.
 
-[Next activity](8-03-insert-multiple.md)
+[Next activity](8-04-insert-multiple.md)

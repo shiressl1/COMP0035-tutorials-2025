@@ -1,6 +1,4 @@
-from activities.starter.starter_class import ParalympicEvent
-
-# Activity 1: Adding methods to classes
+# 1. Adding methods to classes
 
 ## Python classes
 
@@ -16,6 +14,7 @@ class ParalympicEvent:
     def __init__(self, name, sport, classification):
         self.name = name
         self.sport = sport
+        self.classification = classification
         self.athletes = []
 
     def register_athlete(self, athlete_name):
@@ -156,4 +155,4 @@ SQLModel inherits from Pydantic's BaseModel giving:
 2. Try adding a `__repr__` and a method of your choice to the class.
 3. Create an instance of the class then call the methods on that object.
 
-[Next activity](8-02-insert.md)
+[Next activity](8-02-relationships.md)

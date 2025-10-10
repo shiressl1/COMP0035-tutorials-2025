@@ -1,4 +1,4 @@
-# Activity 5: Update rows
+# 7. Update rows
 
 To update one or more columns in a row the SQL syntax looks like this:
 
@@ -27,8 +27,8 @@ def update_heroes():
 
 Add code to update records, print the row before and after to check the results:
 
-- update the course code for the Mathematics course to MATH102
-- update all teacher email addresses with the new domain @newschool.com. For this you also need Python string .replace()
+1. Update the course code for the Mathematics course to MATH102 
+2. update all teacher email addresses with the new domain @newschool.com. For this you also need Python string .replace()
   `teacher_email.replace("@school.com", "@newschool.com")`
 
-[Next activity](8-06-delete.md)
+[Next activity](8-08-quality.md)

@@ -1,4 +1,4 @@
-# Activity 1: Python project structure
+# 1. Python project structure
 
 _*Theme: Working with code for applications*_
 
@@ -99,7 +99,7 @@ structure.
 
 [Next activity](1-02-environments.md)
 
-# Further reading
+## Further reading
 There are examples of typical Python project structures on these sites:
 
 - [Python Packaging User Guide](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/#src-layout-vs-flat-layout)

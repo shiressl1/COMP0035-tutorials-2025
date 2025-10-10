@@ -1,4 +1,4 @@
-# Activity 4: Select rows
+# 5. Select rows
 
 In activity 3.14 the SQL select was introduced:
 
@@ -19,25 +19,30 @@ This activity introduces the SQLModel equivalent, [`select()`](https://sqlmodel.
 As for the previous activities, you first create a Session(). This has been covered so is omitted here.
 
 1. Create a `select` statement e.g. `statement = select(Games)`
+
+    Often you want to select based on a condition using WHERE, e.g.: `WHERE name = 'Clare'`, `WHERE score > 25`, etc.
+
+    In SQLModel append `.where()` to `select()`: `select(Hero).where(Hero.name == "Dave")` NB: uses `==` **not** `=`
+
+    You can limit the number of results returned using LIMIT using `.limit()`, e.g.
+    `select(Hero).where(Hero.name == "Dave").limit(2)` to get the first 2 results.
+
+    Offset works the same way, so to skip the first 2 results: `select(Hero).offset(2)`
 2. Execute the statement and capture the results in a variable.
+3. Access the results so that you can use them in your code. The results may be one row, multiple rows, None, or an error.
 
-You can then use the results.
-
-Often you want to select based on a condition using WHERE, e.g.: `WHERE name = 'Clare'`, `WHERE score > 25`, etc.
-
-In SQLModel append `.where()` to `select()`: `select(Hero).where(Hero.name == "Dave")` NB: uses `==` **not** `=`
-
-You can limit the number of results returned using LIMIT using `.limit()`, e.g.
-`select(Hero).where(Hero.name == "Dave").limit(2)` to get the first 2 results.
-
-Offset works the same way, so to skip the first 2 results: `select(Hero).offset(2)`
+   Options include:
+   - `.first()` The first result of the query, or None if no results are found.
+   - `.all()` A list of all results that match the query.
+   - `.one_or_none()` One result or None, but raises an error if more than one result is found.
+   - `.fetchmany(size=N)` A list of up to N results from the query.
 
 ## Activity: select rows from the students database
 
 Add code to select and print the results:
 
-- select teacher where teacher_name == "Mark Taylor"
-- select the names only for all the students
+1. Select teacher where teacher_name == "Mark Taylor"
+2. Select the names only for all the students
 
 ## Select with related tables
 
@@ -82,7 +87,7 @@ teach Physics:
 
 Add code to select and print the results:
 
-- Select all Students with their name and email that are enrolled on the Physics course, order by name descending
-- Select all Courses that Student with id 1 is enrolled in
+1. Select all Students with their name and email that are enrolled on the Physics course, order by name descending.
+2. Select all Courses that Student with id 1 is enrolled in.
 
-[Next activity](8-05-update.md)
+[Next activity](8-06-delete.md)

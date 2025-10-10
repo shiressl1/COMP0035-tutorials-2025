@@ -3,7 +3,7 @@
 Note:
     The models import is required for the create_all to create the tables.
 
-    from activities.db_wk8 import models
+    from activities.starter.db_wk8 import models
 
     """
 from importlib import resources
@@ -12,7 +12,6 @@ from sqlmodel import SQLModel, create_engine, text
 
 from activities.starter import db_wk8
 from activities.starter.db_wk8 import models
-
 
 student_db = resources.files(db_wk8).joinpath("students.sqlite")
 sqlite_url = f"sqlite:///{str(student_db)}"

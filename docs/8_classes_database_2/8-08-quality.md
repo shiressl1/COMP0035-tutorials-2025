@@ -1,4 +1,4 @@
-# Activity 8: Code quality
+# 8. Code quality
 
 Code quality was covered in week 4.
 

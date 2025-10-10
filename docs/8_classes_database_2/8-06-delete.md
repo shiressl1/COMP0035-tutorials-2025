@@ -1,4 +1,4 @@
-# Activity 5: Delete rows
+# 6. Delete rows
 
 ## SQL
 The SQL syntax for deleting rows is:
@@ -9,7 +9,7 @@ FROM tablename
 WHERE condition
 ```
 
-Executing DELETE without specifying a condition will delete all rows from a table!
+Executing DELETE in SQL without specifying a condition will delete all rows from a table!
 
 ## Delete one or more rows
 
@@ -20,11 +20,15 @@ To use this, you first locate the row or rows to be deleted using `select()` and
 An example with the statements from the documentation:
 
 ```python
-statement = select(Hero).where(Hero.name == "Spider-Youngster")
-results = session.exec(statement)
-hero = results.first()
-session.delete(hero)
-session.commit()
+with Session(engine) as session:
+    # select the row
+    statement = select(Hero).where(Hero.name == "Spider-Youngster")
+    results = session.exec(statement)
+    # create the object
+    hero = results.first()
+    # Delete and commit
+    session.delete(hero)
+    session.commit()
 ```
 
 ## Delete from tables with relationships
@@ -53,7 +57,7 @@ the [cascade delete relationships documentation](https://sqlmodel.tiangolo.com/t
 
 Add code to delete the following. Print before and after to show the results. Print the Enrollment table as well.
 
-- Delete the Teacher with name "John Smith"
-- Delete the Enrollment for Student with student_id 1 from Course with Course_id 1
+1. Delete the Teacher with name "John Smith"
+2. Delete the Enrollment for Student with student_id 1 from Course with Course_id 1
 
-[Next activity](8-07-quality.md)
+[Next activity](8-07-update.md)

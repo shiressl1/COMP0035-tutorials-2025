@@ -125,13 +125,12 @@ _*Theme: Using Python to work with data*_
 [Week 5 instructions](docs/5_classes_orm/5-0-instructions.md)are in the docs/5_classes_orm folder:
 
 1. [Python classes](docs/5_classes_orm/5-01-class.md)
-2. [Python data classes](docs/5_classes_orm/5-02-data-class.md)
-3. [Class relationships - inheritance, composition](docs/5_classes_orm/5-03-inheritance-composition.md)
-4. [Pydantic](docs/5_classes_orm/5-04-pydantic.md)
-5. [ORM and SQLModel](docs/5_classes_orm/5-05-orm-sqlmodel.md)
-6. [Using SQLModel to create SQLite database](docs/5_classes_orm/5-06-sqlmodel-create-db.md)
-7. [Using SQLModel to add data](docs/5_classes_orm/5-07-sqlmodel-add-data.md)
-8. [Summary](docs/5_classes_orm/5-08-summary.md)
+2. [Class relationships - inheritance, composition](docs/5_classes_orm/5-02-inheritance-composition.md)
+3. [Pydantic](docs/5_classes_orm/5-03-pydantic.md)
+4. [ORM and SQLModel](docs/5_classes_orm/5-04-orm-sqlmodel.md)
+5. [Using SQLModel to create SQLite database](docs/5_classes_orm/5-05-sqlmodel-create-db.md)
+6. [Using SQLModel to add data](docs/5_classes_orm/5-06-sqlmodel-add-data.md)
+7. [Summary](docs/5_classes_orm/5-07-summary.md)
 
 ### Week 6 Requirements; interface design
 
@@ -166,12 +165,13 @@ _*Theme: Using Python to work with data*_
 [Instructions](docs/8_classes_database_2/8-0-instructions.md) are in the docs/8_classes_database_2 folder:
 
 1. [Adding methods to classes](docs/8_classes_database_2/8-01-methods.md)
-2. [Add data using SQLModel](docs/8_classes_database_2/8-02-insert.md)
-3. [Add data to tables with relationships](docs/8_classes_database_2/8-03-insert-multiple.md)
-4. [Selecting data from a database with SQLModel](docs/8_classes_database_2/8-04-select.md)
-5. [Update data in a database with SQLModel](docs/8_classes_database_2/8-05-update.md)
-6. [Delete data from a database with SQLModel](docs/8_classes_database_2/8-06-delete.md)
-7. [Reminder: code quality still matters!](docs/8_classes_database_2/8-07-quality.md)
+2. [Tables with relationships in SQLModel](docs/8_classes_database_2/8-02-relationships.md)
+3. [Add data using SQLModel](docs/8_classes_database_2/8-03-insert.md)
+4. [Add data to tables with relationships](docs/8_classes_database_2/8-04-insert-multiple.md)
+5. [Selecting data from a database with SQLModel](docs/8_classes_database_2/8-05-select.md)
+6. [Update data in a database with SQLModel](docs/8_classes_database_2/8-07-update.md)
+7. [Delete data from a database with SQLModel](docs/8_classes_database_2/8-06-delete.md)
+8. [Reminder: code quality still matters!](docs/8_classes_database_2/8-08-quality.md)
 
 ### Week 9 Unit testing, CI and coverage
 
